@@ -1,0 +1,62 @@
+@import './variables';
+@import './mixins';
+
+li {
+    list-style: none;
+}
+
+a,
+button {
+    font-family: "Lora", serif;
+}
+
+.banner::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 0;
+    height: 550px;
+}
+
+.bannertitle {
+    z-index: 1;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+    color: #0300008f;
+    font-family: 'Lora';
+}
+
+
+h1 {
+    font-size: 45px;
+    line-height: 60px;
+    font-weight: 500;
+    color: $clr-white;
+    width: 80%;
+    font-family: "Playfair Display";
+    margin: 0 auto;
+    text-align: center;
+}
+
+h2 {
+    font-size: 35px;
+    line-height: 75px;
+    font-weight: 500;
+    font-family: "Playfair Display";
+}
+
+h3 {
+    font-size: 28px;
+    line-height: normal;
+    font-weight: 500;
+    font-family: "Playfair Display";
+}
