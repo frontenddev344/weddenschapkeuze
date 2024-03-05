@@ -212,6 +212,7 @@ nav.site-nav {
 
 .social-signals {
     padding: 25px 0;
+    cursor: pointer;
 
     i {
         color: $clr-white;
@@ -368,6 +369,7 @@ a.btn.btn-primary.accept-cookies {
 .homebanner.banner {
     background-image: url(../images/homebanner.jpg);
     position: relative;
+    height: 600px;
 
     h1 {
         width: 80%;
@@ -768,9 +770,6 @@ span.travelblock {
     }
 }
 
-.comparison-inner.orange {
-    background-color: $clr-orange;
-}
 
 .lasvegas .row {
     row-gap: 20px;

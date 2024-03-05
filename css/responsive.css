@@ -75,9 +75,15 @@ h1 {
   margin: 0 auto;
   text-align: center;
 }
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 768px) {
   h1 {
     font-size: 30px;
+    line-height: normal;
+  }
+}
+@media screen and (max-width: 575px) {
+  h1 {
+    font-size: 25px;
     line-height: normal;
   }
 }
@@ -96,7 +102,7 @@ h2 {
 }
 
 h3 {
-  font-size: 28px;
+  font-size: 22px;
   line-height: normal;
   font-weight: 500;
   font-family: "Playfair Display";
@@ -305,6 +311,9 @@ h4 {
   .cardmain .wrapper {
     grid-template-columns: repeat(1, 1fr);
   }
+  .casinoresort-part.cardmain {
+    padding: 30px 0;
+  }
 }
 @media screen and (max-width: 575px) {
   .site-nav {
@@ -313,6 +322,15 @@ h4 {
   .site-nav ul {
     display: unset !important;
     flex-wrap: wrap;
+  }
+  .acc-head {
+    padding: 15px 3px;
+  }
+  .acc-head p {
+    font-size: 13px;
+  }
+  .toptext.home {
+    padding: 100px 0 20px 0;
   }
 }
 

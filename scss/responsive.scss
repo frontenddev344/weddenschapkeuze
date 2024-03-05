@@ -236,6 +236,10 @@
     .cardmain .wrapper {
         grid-template-columns: repeat(1, 1fr);
     }
+
+    .casinoresort-part.cardmain {
+        padding: 30px 0;
+    }
 }
 
 @media screen and (max-width:575px) {
@@ -246,6 +250,18 @@
     .site-nav ul {
         display: unset !important;
         flex-wrap: wrap;
+    }
+
+    .acc-head {
+        padding: 15px 3px;
+
+        p {
+            font-size: 13px;
+        }
+    }
+
+    .toptext.home {
+        padding: 100px 0 20px 0;
     }
 }
 

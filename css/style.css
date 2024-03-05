@@ -76,9 +76,15 @@ h1 {
   margin: 0 auto;
   text-align: center;
 }
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 768px) {
   h1 {
     font-size: 30px;
+    line-height: normal;
+  }
+}
+@media screen and (max-width: 575px) {
+  h1 {
+    font-size: 25px;
     line-height: normal;
   }
 }
@@ -97,7 +103,7 @@ h2 {
 }
 
 h3 {
-  font-size: 28px;
+  font-size: 22px;
   line-height: normal;
   font-weight: 500;
   font-family: "Playfair Display";
@@ -295,6 +301,7 @@ nav.site-nav {
 
 .social-signals {
   padding: 25px 0;
+  cursor: pointer;
 }
 .social-signals i {
   color: #fff;
@@ -432,6 +439,7 @@ a.btn.btn-primary.accept-cookies:hover {
 .homebanner.banner {
   background-image: url(../images/homebanner.jpg);
   position: relative;
+  height: 600px;
 }
 .homebanner.banner h1 {
   width: 80%;
@@ -797,10 +805,6 @@ span.travelblock {
 }
 .comparison-inner p {
   color: #fff;
-}
-
-.comparison-inner.orange {
-  background-color: #e37a0e;
 }
 
 .lasvegas .row {
