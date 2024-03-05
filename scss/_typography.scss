@@ -83,10 +83,7 @@ h1 {
         line-height: normal;
     }
 
-    @include mq(sm) {
-        font-size: 25px;
-        line-height: normal;
-    }
+
 }
 
 h2 {

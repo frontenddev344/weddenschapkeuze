@@ -376,6 +376,10 @@ a.btn.btn-primary.accept-cookies {
     }
 }
 
+.homebanner.banner::after {
+    height: 600px;
+}
+
 .toptext {
     padding: 50px 0;
 
@@ -754,10 +758,6 @@ span.travelblock {
     &-inner {
         padding: 50px 30px;
         background: $clr-skyblueblue;
-
-        &:hover {
-            background-color: $clr-orange;
-        }
 
         img {
             max-width: 45px;
