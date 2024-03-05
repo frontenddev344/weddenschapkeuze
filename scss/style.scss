@@ -358,6 +358,7 @@ a.btn.btn-primary.accept-cookies {
 
     &::after {
         height: 450px;
+        z-index: -1;
     }
 }
 
@@ -660,7 +661,8 @@ span.travelblock {
     background-image: url(../images/lasvegasbanner.jpg);
     position: relative;
 }
-.lasvegas.atlantic{
+
+.lasvegas.atlantic {
     background-image: url(../images/casinobg.jpeg);
     background-position: center;
     background-repeat: no-repeat;
@@ -669,18 +671,21 @@ span.travelblock {
     background-blend-mode: multiply;
     position: relative;
     padding: 50px 0;
-    &::after{
+
+    &::after {
         content: "";
         position: absolute;
         inset: 0;
-        background-color:#edfbff;
+        background-color: #edfbff;
         opacity: 0.9;
     }
 }
+
 .lasvegas.atlantic .container {
     position: relative;
     z-index: 2;
 }
+
 .lasvegas {
     &-main {
         box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);

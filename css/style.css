@@ -417,6 +417,7 @@ a.btn.btn-primary.accept-cookies:hover {
 }
 .terms__section.banner::after {
   height: 450px;
+  z-index: -1;
 }
 
 /*terms-conditon-end/
