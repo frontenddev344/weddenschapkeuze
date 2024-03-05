@@ -10,6 +10,13 @@ button {
     font-family: "Lora", serif;
 }
 
+.banner {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+}
+
 .banner::after {
     content: "";
     position: absolute;
@@ -28,7 +35,7 @@ button {
 }
 
 p {
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 400;
     line-height: normal;
     color: #0300008f;
@@ -56,6 +63,13 @@ h2 {
 
 h3 {
     font-size: 28px;
+    line-height: normal;
+    font-weight: 500;
+    font-family: "Playfair Display";
+}
+
+h4 {
+    font-size: 20px;
     line-height: normal;
     font-weight: 500;
     font-family: "Playfair Display";

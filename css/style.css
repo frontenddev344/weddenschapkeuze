@@ -8,6 +8,13 @@ button {
   font-family: "Lora", serif;
 }
 
+.banner {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 550px;
+}
+
 .banner::after {
   content: "";
   position: absolute;
@@ -26,7 +33,7 @@ button {
 }
 
 p {
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 400;
   line-height: normal;
   color: rgba(3, 0, 0, 0.5607843137);
@@ -53,6 +60,13 @@ h2 {
 
 h3 {
   font-size: 28px;
+  line-height: normal;
+  font-weight: 500;
+  font-family: "Playfair Display";
+}
+
+h4 {
+  font-size: 20px;
   line-height: normal;
   font-weight: 500;
   font-family: "Playfair Display";
@@ -256,6 +270,44 @@ nav.site-nav {
 }
 
 /*footer-css-end*/
+/*cookie start*/
+.cookie-alert {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  margin: 0 !important;
+  z-index: 999;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 500ms ease-out;
+  left: 0;
+}
+
+.cookie-alert.show {
+  opacity: 1;
+  transform: translateY(0%);
+  transition-delay: 1000ms;
+}
+.cookie-alert.show h4 {
+  font-size: 23PX;
+  font-family: "Playfair Display";
+  color: #e37a0e;
+}
+
+a.btn.btn-primary.accept-cookies {
+  background: #0082e5;
+  padding: 6px 22px;
+  font-size: 20px;
+  border: 1px solid #0082e5;
+}
+a.btn.btn-primary.accept-cookies:hover {
+  background-color: transparent;
+  color: #0C0B0B;
+  border: 1px solid #0082e5;
+}
+
+/*cookie end*/
 /*privacy-policy start*/
 .privacy__section.banner {
   background-image: url(../images/privacybanner.jpg);
@@ -315,7 +367,6 @@ nav.site-nav {
 /*terms-conditon start*/
 .terms__section.banner {
   background-image: url(../images/termsbanner.jpg);
-  background-position: center;
   margin-top: 0;
   isolation: isolate;
   display: flex;
@@ -324,13 +375,9 @@ nav.site-nav {
   align-items: center;
   text-align: center;
   height: 450px;
+  z-index: -1;
 }
 .terms__section.banner::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: rgba(0, 0, 0, 0.55);
-  z-index: -1;
   height: 450px;
 }
 
@@ -339,7 +386,6 @@ nav.site-nav {
 /*home-css-start*/
 .homebanner.banner {
   background-image: url(../images/homebanner.jpg);
-  height: 550px;
   position: relative;
 }
 
@@ -514,6 +560,100 @@ h2.title {
 }
 
 /*home-css-end*/
+/*about-css-start*/
+.aboutbanner {
+  background-image: url(../images/aboutabanner.jpeg);
+  position: relative;
+}
+
+.choose-main {
+  box-shadow: 0px 0px 30px 0px rgba(199, 199, 199, 0.5);
+  padding: 10px 20px;
+  height: 100%;
+}
+
+.choosehead .row {
+  row-gap: 25px;
+}
+
+span.travelblock {
+  font-size: 23px;
+  color: #0082e5;
+}
+
+.choose-content {
+  padding: 50px 0;
+  position: relative;
+}
+.choose-content h4 {
+  margin: 20px 0;
+  color: #0082e5;
+}
+
+.choose-content {
+  display: flex;
+  gap: 20px;
+  padding: 8px 0;
+  align-items: center;
+}
+.choose-content img {
+  max-width: 45px;
+  height: 45px;
+  object-fit: cover;
+  text-align: left;
+}
+
+.contactform .about_us_content {
+  margin: 30px 0;
+}
+
+.contactform .form-group {
+  margin-bottom: 2rem;
+}
+
+.contactform .input-control {
+  display: block;
+  width: 100%;
+  height: 4rem;
+  border: 1px solid #0082e5;
+  padding: 2rem 2rem;
+  background: transparent;
+  color: #0C0B0B;
+}
+
+.contactform .input-control:focus-visible {
+  outline: none;
+}
+
+.contactform textarea.input-control {
+  resize: none;
+  height: auto;
+}
+
+.contactform .form-group .submit-btn {
+  background: #0082e5;
+  border: 1px solid #0082e5;
+  transition: all 0.2s linear;
+  display: inline-block;
+  padding: 0.8rem 4rem;
+  color: #0C0B0B;
+  text-transform: capitalize;
+}
+.contactform .form-group .submit-btn:hover {
+  background-color: transparent;
+  color: #0C0B0B;
+}
+
+.contactform .form-group label {
+  display: inline-block;
+  padding-bottom: 5px;
+  color: #0082e5;
+  transition: all 0.2s linear;
+  text-transform: capitalize;
+  font-family: "Barlow", sans-serif;
+}
+
+/*about-css-end*/
 
 
 /*# sourceMappingURL=style.css.map */

@@ -389,7 +389,7 @@
   <div class="footer">
     <div class="container">
       <div class="row">
-        <div class="col-lg-3 col-md-3 col-sm-12">
+        <div class="col-lg-3 col-md-6 col-sm-12">
           <div class="footer-logo">
             <a href="index.html"><img src="images/header-logo.png" alt="footerlogo" class="img-fluid"></a>
           </div>
@@ -399,7 +399,7 @@
             <i class="fa-brands fa-twitter"></i>
           </div>
         </div>
-        <div class="col-lg-3 col-md-3 col-sm-12">
+        <div class="col-lg-3 col-md-6 col-sm-12">
           <div class="footer-links">
             <h3>Handige links</h3>
             <ul>
@@ -411,7 +411,7 @@
             </ul>
           </div>
         </div>
-        <div class="col-lg-3 col-md-3 col-sm-12">
+        <div class="col-lg-3 col-md-6 col-sm-12">
           <div class="footer-links">
             <h3>Steun</h3>
             <ul>
@@ -420,7 +420,7 @@
             </ul>
           </div>
         </div>
-        <div class="col-lg-3 col-md-3 col-sm-12">
+        <div class="col-lg-3 col-md-6 col-sm-12">
           <div class="footer-adresse">
             <h3>Email</h3>
             <div class="footer-mails">
@@ -435,6 +435,25 @@
     </div>
   </div>
   <!-- site footer end -->
+
+  <!--cookies start -->
+  <div class="card cookie-alert show">
+    <div class="card-body p-5">
+      <h4>Koekjes</h4>
+      <p>Wij gebruiken cookies om uw surfervaring op onze website te verbeteren. Deze cookies zijn essentieel voor
+        verschillende functionaliteiten, siteprestaties, analyses en gepersonaliseerde inhoud. Als u doorgaat met surfen
+        op onze site, gaat u akkoord met het gebruik van cookies zoals beschreven in ons privacybeleid. Cookies zijn
+        kleine tekstbestanden die op uw apparaat worden opgeslagen en die informatie bijhouden en opslaan. Ze spelen een
+        cruciale rol bij het verbeteren van uw online ervaring. Bedankt dat u voor ons heeft gekozen. Uw privacy is
+        belangrijk voor ons en we doen er alles aan om u een transparante en gepersonaliseerde browse-ervaring te
+        bieden. </p>
+      <div class="btn-toolbar justify-content-end">
+        <a href="#" class="btn btn-primary accept-cookies">Aanvaarden</a>
+      </div>
+    </div>
+  </div>
+  <!--cookies end -->
+
 
   <script src="js/bootstrap.js"></script>
   <script src="js/jquery.js"></script>
@@ -478,6 +497,49 @@
     });
   </script>
 
+  <script>
+    (function () {
+      "use strict";
+
+      var cookieAlert = document.querySelector(".cookie-alert");
+      var acceptCookies = document.querySelector(".accept-cookies");
+
+      cookieAlert.offsetHeight; // Force browser to trigger reflow (https://stackoverflow.com/a/39451131)
+
+      if (!getCookie("acceptCookies")) {
+        cookieAlert.classList.add("show");
+      }
+
+      acceptCookies.addEventListener("click", function () {
+        setCookie("acceptCookies", true, 60);
+        cookieAlert.classList.remove("show");
+      });
+    })();
+
+    // Cookie functions stolen from w3schools
+    function setCookie(cname, cvalue, exdays) {
+      var d = new Date();
+      d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+      var expires = "expires=" + d.toUTCString();
+      document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    }
+
+    function getCookie(cname) {
+      var name = cname + "=";
+      var decodedCookie = decodeURIComponent(document.cookie);
+      var ca = decodedCookie.split(';');
+      for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) === ' ') {
+          c = c.substring(1);
+        }
+        if (c.indexOf(name) === 0) {
+          return c.substring(name.length, c.length);
+        }
+      }
+      return "";
+    }
+  </script>
 
 
 

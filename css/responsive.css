@@ -7,6 +7,13 @@ button {
   font-family: "Lora", serif;
 }
 
+.banner {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 550px;
+}
+
 .banner::after {
   content: "";
   position: absolute;
@@ -25,7 +32,7 @@ button {
 }
 
 p {
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 400;
   line-height: normal;
   color: rgba(3, 0, 0, 0.5607843137);
@@ -52,6 +59,13 @@ h2 {
 
 h3 {
   font-size: 28px;
+  line-height: normal;
+  font-weight: 500;
+  font-family: "Playfair Display";
+}
+
+h4 {
+  font-size: 20px;
   line-height: normal;
   font-weight: 500;
   font-family: "Playfair Display";
@@ -90,7 +104,7 @@ h3 {
     right: 0;
     bottom: 0;
     width: 300px;
-    background: #0C0B0B;
+    background: #0082e5;
     transition: 0.4s cubic-bezier(0, 0, 0.13, 0.61);
     transform: translateX(-100%);
   }
@@ -211,6 +225,10 @@ h3 {
 @media screen and (max-width: 575px) {
   .site-nav {
     width: 100%;
+  }
+  .site-nav ul {
+    display: unset !important;
+    flex-wrap: wrap;
   }
 }
 

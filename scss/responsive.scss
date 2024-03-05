@@ -42,7 +42,7 @@
         right: 0;
         bottom: 0;
         width: 300px;
-        background: $clr-black;
+        background: $clr-skyblueblue;
         transition: 0.4s cubic-bezier(0, 0, 0.13, 0.61);
         transform: translateX(-100%);
     }
@@ -188,6 +188,11 @@
 @media screen and (max-width:575px) {
     .site-nav {
         width: 100%;
+    }
+
+    .site-nav ul {
+        display: unset !important;
+        flex-wrap: wrap;
     }
 }
 
