@@ -103,7 +103,7 @@ h2 {
 }
 
 h3 {
-  font-size: 21px;
+  font-size: 25px;
   line-height: normal;
   font-weight: 500;
   font-family: "Playfair Display";
@@ -803,7 +803,7 @@ span.travelblock {
   height: 45px;
   object-fit: cover;
 }
-.comparison-inner h3 {
+.comparison-inner h4 {
   color: #fff;
 }
 .comparison-inner p {
