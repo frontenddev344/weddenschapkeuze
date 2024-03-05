@@ -383,6 +383,12 @@ a.btn.btn-primary.accept-cookies {
             max-width: 550px;
         }
     }
+
+    &-content {
+        h3 {
+            color: $clr-orange;
+        }
+    }
 }
 
 .cardmain h4.text-h4 {
@@ -736,6 +742,14 @@ span.travelblock {
 }
 
 /*lasvegas-css-end*/
+
+/*monte-carlo-css-start*/
+.montecarlobanner.banner {
+    background-image: url(../images/montecarlobanner.jpg);
+    position: relative;
+}
+
+/*monte-carlo-css-end*/
 
 
 /*# sourceMappingURL=style.css.map */

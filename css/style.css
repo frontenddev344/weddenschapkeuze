@@ -53,6 +53,12 @@ p {
   color: rgba(3, 0, 0, 0.5607843137);
   font-family: "Lora";
 }
+@media screen and (max-width: 575px) {
+  p {
+    font-size: 15px;
+    line-height: normal;
+  }
+}
 
 h1 {
   font-size: 45px;
@@ -64,12 +70,24 @@ h1 {
   margin: 0 auto;
   text-align: center;
 }
+@media screen and (max-width: 575px) {
+  h1 {
+    font-size: 30px;
+    line-height: normal;
+  }
+}
 
 h2 {
   font-size: 35px;
-  line-height: 75px;
+  line-height: normal;
   font-weight: 500;
   font-family: "Playfair Display";
+}
+@media screen and (max-width: 575px) {
+  h2 {
+    font-size: 23px;
+    line-height: normal;
+  }
 }
 
 h3 {
@@ -77,6 +95,12 @@ h3 {
   line-height: normal;
   font-weight: 500;
   font-family: "Playfair Display";
+}
+@media screen and (max-width: 575px) {
+  h3 {
+    font-size: 20px;
+    line-height: normal;
+  }
 }
 
 h4 {
@@ -414,6 +438,9 @@ a.btn.btn-primary.accept-cookies:hover {
   object-fit: cover;
   max-width: 550px;
 }
+.toptext-content h3 {
+  color: #e37a0e;
+}
 
 .cardmain h4.text-h4 {
   font-size: 30px;
@@ -742,6 +769,13 @@ span.travelblock {
 }
 
 /*lasvegas-css-end*/
+/*monte-carlo-css-start*/
+.montecarlobanner.banner {
+  background-image: url(../images/montecarlobanner.jpg);
+  position: relative;
+}
+
+/*monte-carlo-css-end*/
 
 
 /*# sourceMappingURL=style.css.map */

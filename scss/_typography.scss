@@ -55,6 +55,11 @@ p {
     line-height: normal;
     color: #0300008f;
     font-family: 'Lora';
+
+    @include mq(sm) {
+        font-size: 15px;
+        line-height: normal;
+    }
 }
 
 
@@ -67,13 +72,23 @@ h1 {
     font-family: "Playfair Display";
     margin: 0 auto;
     text-align: center;
+
+    @include mq(sm) {
+        font-size: 30px;
+        line-height: normal;
+    }
 }
 
 h2 {
     font-size: 35px;
-    line-height: 75px;
+    line-height: normal;
     font-weight: 500;
     font-family: "Playfair Display";
+
+    @include mq(sm) {
+        font-size: 23px;
+        line-height: normal;
+    }
 }
 
 h3 {
@@ -81,6 +96,11 @@ h3 {
     line-height: normal;
     font-weight: 500;
     font-family: "Playfair Display";
+
+    @include mq(sm) {
+        font-size: 20px;
+        line-height: normal;
+    }
 }
 
 h4 {
