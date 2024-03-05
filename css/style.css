@@ -565,6 +565,9 @@ h2.title {
 .home.faq {
   padding: 50px 0;
 }
+.home.faq h2 {
+  margin-bottom: 25px;
+}
 
 .home.faq .container {
   position: relative;
