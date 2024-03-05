@@ -199,7 +199,7 @@
 
     .acc-head p {
         font-size: 14px;
-        word-break: auto-phrase;
+        word-break: break-all;
         line-height: 28px;
     }
 
@@ -270,6 +270,9 @@
 
     .toptext.home {
         padding: 100px 0 20px 0;
+    }
+    .acc-head::before, .acc-head::after {
+        top: 63%;
     }
 }
 

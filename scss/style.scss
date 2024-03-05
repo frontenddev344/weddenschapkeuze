@@ -388,8 +388,8 @@ a.btn.btn-primary.accept-cookies {
     }
 
     &-content {
-        h3 {
-            color: $clr-orange;
+        h4 {
+            color: $clr-orange !important;
         }
     }
 }
@@ -558,6 +558,7 @@ h2.title {
     color: $clr-white;
     font-weight: bold;
     margin-bottom: 0;
+    FONT-FAMILY: 'Playfair Display';
 }
 
 .acc-content {

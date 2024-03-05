@@ -453,8 +453,8 @@ a.btn.btn-primary.accept-cookies:hover {
   object-fit: cover;
   max-width: 550px;
 }
-.toptext-content h3 {
-  color: #e37a0e;
+.toptext-content h4 {
+  color: #e37a0e !important;
 }
 
 .cardmain h4.text-h4 {
@@ -619,6 +619,7 @@ h2.title {
   color: #fff;
   font-weight: bold;
   margin-bottom: 0;
+  FONT-FAMILY: "Playfair Display";
 }
 
 .acc-content {
