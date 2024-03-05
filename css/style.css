@@ -704,6 +704,29 @@ span.travelblock {
   position: relative;
 }
 
+.lasvegas.atlantic {
+  background-image: url(../images/casinobg.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-blend-mode: multiply;
+  position: relative;
+  padding: 50px 0;
+}
+.lasvegas.atlantic::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #edfbff;
+  opacity: 0.9;
+}
+
+.lasvegas.atlantic .container {
+  position: relative;
+  z-index: 2;
+}
+
 .lasvegas-main {
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
   height: 100%;
