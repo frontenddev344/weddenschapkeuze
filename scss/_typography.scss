@@ -10,6 +10,21 @@ button {
     font-family: "Lora", serif;
 }
 
+.primary-btn {
+    background: $clr-skyblueblue;
+    color: $clr-white;
+    border: 1px solid $clr-skyblueblue;
+    font-size: 18px;
+    padding: 10px 20px;
+    display: inline-block;
+
+    &:hover {
+        color: $clr-black;
+        border: 1px solid $clr-skyblueblue;
+        background-color: transparent;
+    }
+}
+
 .banner {
     background-position: center;
     background-repeat: no-repeat;

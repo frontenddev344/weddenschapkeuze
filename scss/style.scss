@@ -649,9 +649,90 @@ span.travelblock {
 /*about-css-end*/
 
 /*lasvegas-css-start*/
-.lasvegas.banner {
+.lasvegasbanner.banner {
     background-image: url(../images/lasvegasbanner.jpg);
     position: relative;
+}
+
+.lasvegas {
+    &-main {
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+        height: 100%;
+        padding: 20px;
+    }
+
+    &-picture {
+        img {
+            width: 100%;
+            margin-bottom: 25px;
+            height: 350px;
+            object-fit: cover;
+        }
+    }
+
+    &-content {
+        margin-bottom: 25px;
+        height: 100%;
+
+        h4 {
+            color: $clr-skyblueblue;
+        }
+
+        ul {
+            margin: 20px 0;
+        }
+
+        li {
+            color: $clr-black;
+            color: $clr-grey;
+            font-family: "Lora";
+
+            span {
+                color: $clr-skyblueblue;
+                font-size: 17px;
+                margin: 0 5px;
+            }
+        }
+    }
+}
+
+.comparison {
+    &-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    &-inner {
+        padding: 50px 30px;
+        background: $clr-skyblueblue;
+
+        &:hover {
+            background-color: $clr-orange;
+        }
+
+        img {
+            max-width: 45px;
+            height: 45px;
+            object-fit: cover;
+        }
+
+        h3 {
+            color: $clr-white;
+        }
+
+        p {
+            color: $clr-white;
+        }
+    }
+}
+
+.comparison-inner.orange {
+    background-color: $clr-orange;
+}
+
+.lasvegas .row {
+    row-gap: 20px;
 }
 
 /*lasvegas-css-end*/

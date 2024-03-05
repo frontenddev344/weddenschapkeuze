@@ -7,6 +7,20 @@ button {
   font-family: "Lora", serif;
 }
 
+.primary-btn {
+  background: #0082e5;
+  color: #fff;
+  border: 1px solid #0082e5;
+  font-size: 18px;
+  padding: 10px 20px;
+  display: inline-block;
+}
+.primary-btn:hover {
+  color: #0C0B0B;
+  border: 1px solid #0082e5;
+  background-color: transparent;
+}
+
 .banner {
   background-position: center;
   background-repeat: no-repeat;
@@ -220,6 +234,14 @@ h4 {
   nav.site-nav {
     max-width: unset;
     margin: unset;
+  }
+  .comparison-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 767px) {
+  .comparison-grid {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 @media screen and (max-width: 575px) {

@@ -8,6 +8,20 @@ button {
   font-family: "Lora", serif;
 }
 
+.primary-btn {
+  background: #0082e5;
+  color: #fff;
+  border: 1px solid #0082e5;
+  font-size: 18px;
+  padding: 10px 20px;
+  display: inline-block;
+}
+.primary-btn:hover {
+  color: #0C0B0B;
+  border: 1px solid #0082e5;
+  background-color: transparent;
+}
+
 .banner {
   background-position: center;
   background-repeat: no-repeat;
@@ -658,9 +672,73 @@ span.travelblock {
 
 /*about-css-end*/
 /*lasvegas-css-start*/
-.lasvegas.banner {
+.lasvegasbanner.banner {
   background-image: url(../images/lasvegasbanner.jpg);
   position: relative;
+}
+
+.lasvegas-main {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  height: 100%;
+  padding: 20px;
+}
+.lasvegas-picture img {
+  width: 100%;
+  margin-bottom: 25px;
+  height: 350px;
+  object-fit: cover;
+}
+.lasvegas-content {
+  margin-bottom: 25px;
+  height: 100%;
+}
+.lasvegas-content h4 {
+  color: #0082e5;
+}
+.lasvegas-content ul {
+  margin: 20px 0;
+}
+.lasvegas-content li {
+  color: #0C0B0B;
+  color: rgba(3, 0, 0, 0.5607843137);
+  font-family: "Lora";
+}
+.lasvegas-content li span {
+  color: #0082e5;
+  font-size: 17px;
+  margin: 0 5px;
+}
+
+.comparison-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.comparison-inner {
+  padding: 50px 30px;
+  background: #0082e5;
+}
+.comparison-inner:hover {
+  background-color: #e37a0e;
+}
+.comparison-inner img {
+  max-width: 45px;
+  height: 45px;
+  object-fit: cover;
+}
+.comparison-inner h3 {
+  color: #fff;
+}
+.comparison-inner p {
+  color: #fff;
+}
+
+.comparison-inner.orange {
+  background-color: #e37a0e;
+}
+
+.lasvegas .row {
+  row-gap: 20px;
 }
 
 /*lasvegas-css-end*/
