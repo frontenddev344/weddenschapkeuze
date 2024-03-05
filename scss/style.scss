@@ -367,6 +367,10 @@ a.btn.btn-primary.accept-cookies {
 .homebanner.banner {
     background-image: url(../images/homebanner.jpg);
     position: relative;
+
+    h1 {
+        width: 80%;
+    }
 }
 
 .toptext {
@@ -546,7 +550,7 @@ h2.title {
 /*home-css-end*/
 
 /*about-css-start*/
-.aboutbanner {
+.aboutbanner.banner {
     background-image: url(../images/aboutabanner.jpeg);
     position: relative;
 }
@@ -643,6 +647,14 @@ span.travelblock {
 }
 
 /*about-css-end*/
+
+/*lasvegas-css-start*/
+.lasvegas.banner {
+    background-image: url(../images/lasvegasbanner.jpg);
+    position: relative;
+}
+
+/*lasvegas-css-end*/
 
 
 /*# sourceMappingURL=style.css.map */

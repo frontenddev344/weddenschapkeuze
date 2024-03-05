@@ -45,7 +45,7 @@ h1 {
   line-height: 60px;
   font-weight: 500;
   color: #fff;
-  width: 80%;
+  width: 100%;
   font-family: "Playfair Display";
   margin: 0 auto;
   text-align: center;
@@ -388,6 +388,9 @@ a.btn.btn-primary.accept-cookies:hover {
   background-image: url(../images/homebanner.jpg);
   position: relative;
 }
+.homebanner.banner h1 {
+  width: 80%;
+}
 
 .toptext {
   padding: 100px 0 50px 0;
@@ -561,7 +564,7 @@ h2.title {
 
 /*home-css-end*/
 /*about-css-start*/
-.aboutbanner {
+.aboutbanner.banner {
   background-image: url(../images/aboutabanner.jpeg);
   position: relative;
 }
@@ -654,6 +657,13 @@ span.travelblock {
 }
 
 /*about-css-end*/
+/*lasvegas-css-start*/
+.lasvegas.banner {
+  background-image: url(../images/lasvegasbanner.jpg);
+  position: relative;
+}
+
+/*lasvegas-css-end*/
 
 
 /*# sourceMappingURL=style.css.map */
