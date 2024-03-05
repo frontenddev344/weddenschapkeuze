@@ -548,6 +548,11 @@ h2.title {
   padding: 50px 0;
 }
 
+.home.faq .container {
+  position: relative;
+  z-index: 2;
+}
+
 .acc-container {
   max-width: 80%;
   width: 100%;
