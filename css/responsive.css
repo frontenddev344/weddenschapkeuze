@@ -334,11 +334,13 @@ h4 {
   }
   .acc-head p {
     font-size: 13px;
+    margin-right: 38px;
   }
   .toptext.home {
     padding: 100px 0 20px 0;
   }
-  .acc-head::before, .acc-head::after {
+  .acc-head::before,
+  .acc-head::after {
     top: 63%;
   }
 }
