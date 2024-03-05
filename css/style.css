@@ -776,6 +776,13 @@ span.travelblock {
 }
 
 /*monte-carlo-css-end*/
+/*atlanticbanner-css-start*/
+.atlanticbanner.banner {
+  background-image: url(../images/atlanticbanner.jpg);
+  position: relative;
+}
+
+/*atlanticbanner-css-end*/
 
 
 /*# sourceMappingURL=style.css.map */

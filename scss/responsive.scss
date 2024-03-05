@@ -187,11 +187,21 @@
     .comparison-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .acc-head p {
+        font-size: 14px;
+        word-break: auto-phrase;
+        line-height: 28px;
+    }
 }
 
 @media screen and (max-width:767px) {
     .comparison-grid {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .acc-container {
+        max-width: 100%;
     }
 }
 
