@@ -53,6 +53,12 @@ p {
   color: rgba(3, 0, 0, 0.5607843137);
   font-family: "Lora";
 }
+@media screen and (max-width: 768px) {
+  p {
+    font-size: 16px;
+    line-height: normal;
+  }
+}
 @media screen and (max-width: 575px) {
   p {
     font-size: 15px;
@@ -453,7 +459,7 @@ h2.title {
 }
 
 .casinoresort-part.cardmain {
-  padding: 100px 0 50px 0;
+  padding: 50px 0;
 }
 
 .cardmain .wrapper {
@@ -519,6 +525,10 @@ h2.title {
   border-top: 1px solid #0082e5;
   height: 50px;
   line-height: 50px;
+}
+
+.casinoresort-part.cardmain h2 {
+  margin: 25px 0px;
 }
 
 .cardmain .link-a {
@@ -686,7 +696,7 @@ span.travelblock {
   transition: all 0.2s linear;
   display: inline-block;
   padding: 0.8rem 4rem;
-  color: #0C0B0B;
+  color: #fff;
   text-transform: capitalize;
 }
 .contactform .form-group .submit-btn:hover {

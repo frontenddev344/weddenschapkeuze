@@ -52,6 +52,12 @@ p {
   color: rgba(3, 0, 0, 0.5607843137);
   font-family: "Lora";
 }
+@media screen and (max-width: 768px) {
+  p {
+    font-size: 16px;
+    line-height: normal;
+  }
+}
 @media screen and (max-width: 575px) {
   p {
     font-size: 15px;
@@ -122,6 +128,13 @@ h4 {
   }
   .site-nav li {
     font-size: 16px;
+  }
+  .cardmain .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .cardmain .card {
+    width: 100%;
+    height: 350px;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -267,6 +280,15 @@ h4 {
     word-break: auto-phrase;
     line-height: 28px;
   }
+  .toptext-picture img {
+    height: 650px;
+  }
+  .homebanner.banner h1 {
+    width: 100%;
+  }
+  .toptext-content p {
+    font-size: 16px;
+  }
 }
 @media screen and (max-width: 767px) {
   .comparison-grid {
@@ -274,6 +296,14 @@ h4 {
   }
   .acc-container {
     max-width: 100%;
+  }
+  .toptext-picture img {
+    height: 450px;
+    max-width: 100%;
+    margin-bottom: 25px;
+  }
+  .cardmain .wrapper {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 @media screen and (max-width: 575px) {
