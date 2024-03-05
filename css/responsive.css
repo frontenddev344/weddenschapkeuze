@@ -102,7 +102,7 @@ h2 {
 }
 
 h3 {
-  font-size: 22px;
+  font-size: 21px;
   line-height: normal;
   font-weight: 500;
   font-family: "Playfair Display";
@@ -294,6 +294,9 @@ h4 {
   }
   .toptext-content p {
     font-size: 16px;
+  }
+  .site-header .site-nav ul li a.active {
+    border-bottom: none;
   }
 }
 @media screen and (max-width: 767px) {

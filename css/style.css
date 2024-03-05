@@ -103,7 +103,7 @@ h2 {
 }
 
 h3 {
-  font-size: 22px;
+  font-size: 21px;
   line-height: normal;
   font-weight: 500;
   font-family: "Playfair Display";
@@ -446,7 +446,7 @@ a.btn.btn-primary.accept-cookies:hover {
 }
 
 .toptext {
-  padding: 100px 0 50px 0;
+  padding: 50px 0;
 }
 .toptext-picture img {
   height: 480px;
